@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         let viewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
         viewcontroller.ctArray = contactArray
         navigationController?.pushViewController(viewcontroller, animated: true)
-        
+        print("viewcontroller")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
